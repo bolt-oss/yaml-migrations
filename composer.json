@@ -1,5 +1,5 @@
 {
-    "name": "bobdenotter/yaml-migrations",
+    "name": "bolt-oss/yaml-migrations",
     "description": "A library to facilitate migrations for YAML configuration files",
     "type": "library",
     "license": "MIT",
@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "bobdenotter/commando": "^0.4 || ^1.0",
+        "bolt-oss/commando": "^0.4 || ^1.0",
         "webimpress/safe-writer": "^2.1",
         "composer/semver": "^3.2",
         "symfony/yaml": "^5.1",
@@ -21,6 +21,9 @@
         "psr-4": {
             "YamlMigrate\\": "src/"
         }
+    },
+    "replace": {
+        "bobdenotter/yaml-migrations": "*"
     },
     "autoload-dev": {
         "psr-4": {
